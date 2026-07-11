@@ -1,0 +1,138 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+.topbar {
+    background: #1e1f22;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #222, #444);
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero-inner {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.eyebrow {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.toc {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.toc a {
+    display: block;
+    padding: 8px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #eee;
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.tip {
+    background: #fff8db;
+    border-left: 5px solid #f0b400;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.code-block {
+    background: #1e1f22;
+    color: white;
+}
+
+footer {
+    background: #1e1f22;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .toc {
+        width: 100%;
+        position: static;
+    }
+} 
